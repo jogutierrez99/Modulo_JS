@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de plantas</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script defer src="./main.js"></script>
+  </head>
+
+  <header class="header">
+    <div class="logo">
+        <h2>GreenShop</h2>
+    </div>
+    <navbar class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Inicio</a></li>
+            <li class="menu-item"><a href="#">Plantas</a></li>
+            <li class="menu-item"><a href="#">Blog</a></li>
+            <li class="menu-item"><a href="#">Contacto</a></li>
+        </ul>
+    </navbar>
+    <div class="header-buttons">
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-cart-shopping shopping-list" id="toggleShoppingListBtn"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+  
+  <div id="shoppingListContainer" class="shopping-list-container">
+    <div class="container">
+        <h4 class="title">Carrito de la compra</h4>
+        <table class="shopping-list-table">
+            <tr>
+                <th class="w-50">Item</th>
+                <th>€</th>
+                <th>Nº</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <th>Joshua</th>
+                <th>€</th>
+                <th>Nº</th>
+                <th>Total</th>
+            </tr>
+        </table>
+        <div class="shopping-list-total">
+            Total: <span id="totalPrice">100€</span>
+        </div>
+    </div>
+  </div>
+ 
+  <body>
+    <div id="productsContainer" class="product-container">
+    </div>
+  </body>
+</html>
