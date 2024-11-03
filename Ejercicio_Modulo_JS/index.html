@@ -30,25 +30,28 @@
   </header>
   
   <div id="shoppingListContainer" class="shopping-list-container">
-    <div class="container">
+    <div class="w-100">
         <h4 class="title">Carrito de la compra</h4>
-        <table class="shopping-list-table">
-            <tr>
-                <th class="w-50">Item</th>
-                <th>€</th>
-                <th>Nº</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <th>Joshua</th>
-                <th>€</th>
-                <th>Nº</th>
-                <th>Total</th>
-            </tr>
+        <table id="shoppingList" class="shopping-list-table">
+            <thead>
+                <tr>
+                    <th class="w-50">Item</th>
+                    <th>€</th>
+                    <th>Nº</th>
+                    <th>Total</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
         <div class="shopping-list-total">
-            Total: <span id="totalPrice">100€</span>
+            Total: <span id="totalPrice">0€</span>
         </div>
+        <div class="container">
+            <button id="doOrderBtn">Comprar</button>
+        </div>
+        
     </div>
   </div>
  

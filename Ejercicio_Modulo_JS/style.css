@@ -18,6 +18,10 @@ body{
     width: 50%;
 }
 
+.w-100{
+    width: 100%;
+}
+
 /*Header*/
 
 .header{
@@ -96,7 +100,7 @@ cursor: pointer;
 }
 
 .product-pill{
-    width: 33%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -136,6 +140,10 @@ cursor: pointer;
     text-align: center;
 }
 
+.product-pill .product-stock{
+    text-align: right;
+}
+
 .product-pill .product-button{
     margin-top: 10px;
     text-align: center; 
@@ -155,13 +163,13 @@ cursor: pointer;
 /*Shopping cart*/
 
 .shopping-list-container{
-    width: 33vw;
+    width: 100%;
     height: calc(100vh - 60px);
     background-color: rgb(240, 240, 240);
     border: 1px solid grey;
     display: flex;
     position: fixed;
-    right: -33vw;
+    right: -100vw;
     top:60px;
     transition: right 1s;
     padding: 30px 15px;
@@ -186,10 +194,39 @@ cursor: pointer;
 .shopping-list-container .shopping-list-table td, 
 .shopping-list-container .shopping-list-table th{
     border: 1px solid black;
+    padding: 10px;
 }
 
 .shopping-list-container .shopping-list-total{
+    margin-top: 10px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /*END Shopping cart*/
+
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+
+    .product-pill{
+        width: 50%;
+    }
+
+    .shopping-list-container{
+        width: 40%;
+        right: -50vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .product-pill{
+        width: 33%;
+    }
+
+    .shopping-list-container{
+        width: 33%;
+    }
+}
